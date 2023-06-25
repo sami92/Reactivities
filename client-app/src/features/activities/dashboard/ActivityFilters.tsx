@@ -1,3 +1,4 @@
+import Calendar from "react-calendar";
 import { Header, Menu } from "semantic-ui-react";
 
 export default function ActivityFilters() {
@@ -10,8 +11,7 @@ export default function ActivityFilters() {
                 <Menu.Item content="I'am hosting" />
             </Menu>
             <Header />
-            <span>Calender</span>
-            {/* <Calender /> */}
+            <Calendar />
         </>
     )
 }
