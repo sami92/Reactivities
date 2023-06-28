@@ -1,0 +1,19 @@
+import { Link } from "react-router-dom";
+import { Button, Header, Icon, Segment } from "semantic-ui-react";
+
+export default function NotFound() {
+    return (
+        <Segment placeholder>
+            <Header icon>
+                <Icon name="search" />
+                Oops - not found!
+            </Header>
+            <Segment.Inline>
+                <Button as={Link} to="/activites">
+                    Return to activities
+                </Button>
+            </Segment.Inline>
+        </Segment>
+    )
+
+}
