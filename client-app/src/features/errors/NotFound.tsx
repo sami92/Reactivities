@@ -9,7 +9,7 @@ export default function NotFound() {
                 Oops - not found!
             </Header>
             <Segment.Inline>
-                <Button as={Link} to="/activites">
+                <Button as={Link} to="/activities">
                     Return to activities
                 </Button>
             </Segment.Inline>
