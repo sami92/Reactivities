@@ -13,7 +13,7 @@ function ActivityDashboard() {
         if (activityRegistry.size <= 1) loadActivities();
     }, [loadActivities, activityRegistry.size])
 
-    if (activityStore.loadingInitail) return <LoadingComponent content='Loading app' />
+    if (activityStore.loadingInitail) return <LoadingComponent content='Loading Activities...  ' />
     return (
         <Grid>
             <Grid.Column width='10'>
