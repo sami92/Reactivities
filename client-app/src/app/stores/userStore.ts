@@ -26,10 +26,10 @@ export default class UserStore {
         }
     }
 
-    logout = () => {
+    logout = () => {        
         store.commonStore.setToken(null);
         this.user = null;
-        router.navigate('/login');
+        router.navigate('/');
     }
 
     register = async (cred: UserFormValues) => {

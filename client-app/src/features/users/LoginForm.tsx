@@ -18,7 +18,7 @@ export default observer(function LoginForm() {
                     <MyTextInput placeholder="Password" name="password" type="password" />
                     <ErrorMessage name="error" render={() =>
                         <Label style={{ marginBottom: 10 }} basic color="red" content={errors.error} />} />
-                    <Button loading={isSubmitting} positive content="login" type="submit" fluid />
+                    <Button loading={isSubmitting} disabled={isSubmitting} positive content="login" type="submit" fluid />
                 </Form>
             )}
         </Formik>
